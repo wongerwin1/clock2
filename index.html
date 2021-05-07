@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Year Up | Year Up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image.jpg" href="yearup.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <body> 
+        <header class="hero">
+            <div id="clock">8:10:45</div>
+        <script>
+            setInterval(showTime, 1000);
+            function showTime() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "AM";
+      
+                if (hour > 12) {
+                    hour -= 12;
+                    am_pm = "PM";
+                }
+                if (hour == 0) {
+                    hr = 12;
+                    am_pm = "AM";
+                }
+      
+                hour = hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+      
+                let currentTime = hour + ":" 
+                    + min + ":" + sec + am_pm;
+      
+                document.getElementById("clock")
+                    .innerHTML = currentTime;
+            }
+      
+            showTime();
+        </script>
+            <div class="container spacing">
+            <h1 class="primary-title">Year Up New York</h1>
+            <p class="blurb">Turn one year of training and corporate connections into the career you want.</p>
+            <a href="https://www.yearup.org/seize-opportunity" class="btn">Sign Up</a>
+            </div>
+            </div>
+        </header>
+        <main>
+          <section class="featured">
+              <div class="container">
+                  <h2 class="section-title">Technical Tracks</h2>
+                 <div class="split">
+                    <a href="#" class="featured__item">
+                        <img src="helpdesk.png" alt="helpdesk" class="featured_img">
+                        <p class="featured__details"><span class="price">Sales and Customer Supoort</span></p>
+                    </a>
+                    <a href="#" class="featured__item">
+                        <img src="fiops.png" alt="finops" class="featured_img">
+                        <p class="featured__details"><span class="price">Financial Operations</span></p>
+                    </a>
+                    <a href="#" class="featured__item">
+                        <img src="Infotech.png" alt="IT" class="featured_img">
+                        <p class="featured__details"><span class="price">Information technology (IT)</span></p>
+                    </a>
+                    <a href="#" class="featured__item">
+                        <img src="soft3.png" alt="sowftware" class="featured_img">
+                        <p class="featured__details"><span class="price">Software Development</span></p>
+                    </a>
+                    <a href="#" class="featured__item">
+                        <img src="buss-ops.png" alt="business ops" class="featured_img">
+                        <p class="featured__details"><span class="price">Business Operations</span></p>
+                    </a>
+            
+                 </div> 
+            </section>
+
+          <section class="our-whys">
+            <div class="container">
+                <h2 class="section-title">Why Year Up?</h2>
+                <article class="product reason-1 spacing">
+                    <img src="Professional-Business-Men-and-Women-Smiling.png" alt="businessman" class="product__image">
+                    <h3 class="product__title">Six-Month Corporate Internship</h3>
+                    <p class="product__description">Your six-month internship is about gaining access, getting your foot in the door, and making connections that count. 
+                        You’ll receive valuable, hands-on experience working at a major company as you further develop the technical skills you’ve learned.</p>
+                    <a href="https://www.yearup.org/students/what-you-can-learn" class="btn">Learn More</a>
+                </article>
+
+                <article class="product reason-2 spacing">
+                    <img src="earn.png" alt="earn-money" class="product__image">
+                    <h3 class="product__title">Earn While You Learn</h3>
+                    <p class="product__description">Rather than paying, our students actually earn educational stipend payments to offset expenses during their training and internship. Why? Because Year Up is a nonprofit. 
+                        So, unlike other job training programs, we aren’t in it for money. We’re in it for you.<p> 
+                    <a href="https://www.yearup.org/students/what-you-can-learn" class="btn">Learn More</a>
+                </article>
+
+                <article class="product reason-3 spacing">
+                    <img src="community.png" alt="connections" class="product__image">
+                    <h3 class="product__title">Connections, Community, Support</h3>
+                    <p class="product__description">There are always reasons to wait or put off your future. But Year Up can help you manage anything that challenges your success, no matter how big or small. Focus on your goals. Our coaches, mentors, social workers, and staff are here to support you.</p> 
+                    <a href="https://www.yearup.org/students/what-you-can-learn" class="btn">Learn More</a>
+                </article>
+            </div>
+          </section>
+        </main>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.instagram.com/yearupnynj/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/yearup"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://twitter.com/YearUp"><i class="fa fa-twitter-square"></i></a>
+                </div>
+                 <p class="copyright">Erwin Wong © 2021</p>
+                 
+            </footer>
+        </div> 
+        
+</body>
+</html>
