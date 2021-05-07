@@ -235,3 +235,14 @@ img {
     color:#aaa;
     margin-bottom:0;
   }
+
+#clock {
+  font-size: 175px;
+  width: 900px;
+  margin: 200px auto;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #ccc;
+  color: #111;
+}
